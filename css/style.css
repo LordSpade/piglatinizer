@@ -1,1 +1,12 @@
+h1{
+    text-align: center;
+}
 
+.center{
+    margin:0 auto;
+    width:51%;
+}
+
+body{
+    background-color:red; 
+}
