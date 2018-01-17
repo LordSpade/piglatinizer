@@ -6,22 +6,25 @@
 
 // Document Ready Function. All of your jQuery should go in here. 
 $( document ).ready(function() {
-  
-
-
-
+	
+  $("button").click(function() {
+	var input = $("input").val();
+	$("body").append(wordtoPig(input));
+	console.log(input);
+  });
 });
 
 
+
 // Create the wordToPigLatin function that takes a word as a parameter and returns a transfromed word. 
+var wordtoPigLatin = ["ay","yay"];
 
-
-
+function wordtoPig (word) {
+	return word + wordtoPigLatin[0];	
+}
 
 
 
 // Create the sentenceToPigLatin function that takes a sentence as a parameter
 	//Loops through all the words in the sentence and transforms each word
 	//It should return a transfromed sentance
-
-
